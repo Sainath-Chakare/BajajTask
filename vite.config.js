@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/bfhl': {
-        target: 'http://localhost:8080',
+        target: 'https://bajajapi-hshe.onrender.com',
         changeOrigin: true,
       },
     },
