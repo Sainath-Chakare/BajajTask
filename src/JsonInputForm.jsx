@@ -5,17 +5,17 @@ import Select from 'react-select';
 const customStyles = {
    container: (provided) => ({
        ...provided,
-       backgroundColor: '#333', // Dark background for container
+       backgroundColor: '#000', // Black background for container
    }),
    control: (provided) => ({
        ...provided,
-       backgroundColor: '#333', // Dark background for control
+       backgroundColor: '#000', // Black background for control
        border: '1px solid #444', // Slightly lighter border
-       color: '#fff', // Light font color for text
+       color: '#fff', // White font color for text
    }),
    singleValue: (provided) => ({
        ...provided,
-       color: '#fff', // Light color for selected value
+       color: '#fff', // White color for selected value
    }),
    placeholder: (provided) => ({
        ...provided,
@@ -23,32 +23,33 @@ const customStyles = {
    }),
    menu: (provided) => ({
        ...provided,
-       backgroundColor: '#333', // Dark background for dropdown menu
-       color: '#fff', // Light font color for menu items
+       backgroundColor: '#000', // Black background for dropdown menu
+       color: '#fff', // White font color for menu items
    }),
    option: (provided, state) => ({
        ...provided,
-       backgroundColor: state.isSelected ? '#555' : '#333', // Dark background for options
-       color: '#fff', // Light font color for options
+       backgroundColor: state.isSelected ? '#333' : '#000', // Black background for options, slightly lighter for selected
+       color: '#fff', // White font color for options
        ':active': {
-           backgroundColor: '#444', // Focused background color
+           backgroundColor: '#333', // Background color for active (hover) state
+           color: '#fff', // White font color for active state
        }
    }),
    multiValue: (provided) => ({
        ...provided,
-       backgroundColor: '#555', // Dark background for multi-value tags
-       color: '#fff', // Light font color for tags
+       backgroundColor: '#000', // Black background for multi-value tags
+       color: '#fff', // White font color for tags
    }),
    multiValueLabel: (provided) => ({
        ...provided,
-       color: '#fff', // Light color for multi-value labels
+       color: '#fff', // White color for multi-value labels
    }),
    multiValueRemove: (provided) => ({
        ...provided,
-       color: '#fff', // Light color for remove button
+       color: '#fff', // White color for remove button
        ':hover': {
-           backgroundColor: '#444', // Background color for hover
-           color: '#fff', // Light color for hover
+           backgroundColor: '#333', // Background color for remove button on hover
+           color: '#fff', // White color for text on hover
        }
    }),
 };
