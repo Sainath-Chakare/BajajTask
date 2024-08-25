@@ -83,7 +83,8 @@ const JsonInputForm = () => {
             console.log("Parsed JSON:", json);
 
             // Send the JSON data to the backend
-            const response = await axios.post("http://localhost:8080/bfhl", json);
+            // const response = await axios.post("http://localhost:8080/bfhl", json);
+            const response = await axios.post("https://bajajapi-hshe.onrender.com/bfhl", json);
 
             // Debugging: Log the response data
             console.log("Response Data:", response.data);
